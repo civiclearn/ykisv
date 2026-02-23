@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – YKI Svenska B1/B2 | YkiSvenska.fi</title>
+
+  <meta name="description"
+    content="Kontakta YkiSvenska.fi med frågor om YKI-provet, ditt konto eller vår träningsplattform. Vi svarar snabbt.">
+
+  <link rel="canonical" href="https://ykisvenska.fi/kontakt/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_FI">
+  <meta property="og:title" content="Kontakt – YkiSvenska.fi">
+  <meta property="og:description"
+    content="Behöver du hjälp med YKI-provet eller din åtkomst till plattformen? Skriv till oss så svarar vi snabbt.">
+  <meta property="og:url" content="https://ykisvenska.fi/kontakt/">
+  <meta property="og:image" content="https://ykisvenska.fi/assets/images/og-default.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kontakt – YkiSvenska.fi">
+  <meta name="twitter:description"
+    content="Kontakta YkiSvenska.fi för support eller frågor om YKI-provet och vår träningsplattform.">
+  <meta name="twitter:image" content="https://ykisvenska.fi/assets/images/og-default.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/newhome.css">
+
+  <style>
+    .contact-main {
+      max-width: 600px;
+      margin: 3rem auto 5rem;
+      padding: 0 1.25rem;
+    }
+
+    .contact-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 1.75rem;
+      text-align: center;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 1.5rem;
+      padding: 2.5rem 2.5rem 2rem;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 600px) {
+      .contact-card { padding: 1.5rem 1.25rem; }
+    }
+
+    .contact-form .field {
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-form label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 2px solid #e5e2db;
+      border-radius: 0.75rem;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #1a1a1a;
+      background: #fafafa;
+      transition: border-color 0.18s;
+      box-sizing: border-box;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #7c3aed;
+      background: #fff;
+    }
+
+    .contact-form textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .contact-submit {
+      display: block;
+      width: 100%;
+      background: #7c3aed;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 0.9rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 0.5rem;
+    }
+
+    .contact-submit:hover:not([disabled]) {
+      background: #6d28d9;
+      transform: translateY(-1px);
+    }
+
+    .contact-submit[disabled] {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .contact-feedback {
+      display: none;
+      margin-top: 1rem;
+      font-size: 0.97rem;
+      padding-left: 0.2rem;
+    }
+    .contact-feedback.success { color: #1b7f3b; }
+    .contact-feedback.error   { color: #b71c1c; }
+  </style>
+</head>
+
+<body>
+
+<header class="cl-header">
+  <div class="cl-header-inner">
+
+    <a href="/" class="cl-logo">
+      <img src="/assets/images/fi.svg" alt="FI" />
+      <span>YkiSvenska.fi</span>
+    </a>
+
+    <nav class="cl-nav">
+      <a href="/gratis-test/">Gratis test</a>
+      <a href="/artiklar/">Artiklar</a>
+      <a href="/kontakt/" class="active">Kontakt</a>
+      <a href="https://civiclearn.com/ykisvenska/login">Logga in</a>
+    </nav>
+
+    <div class="cl-right">
+      <div class="cl-powered">powered by <span>CivicLearn</span></div>
+      <a href="https://civiclearn.com/ykisvenska/checkout" class="cl-btn">Fullständig åtkomst</a>
+    </div>
+
+  </div>
+</header>
+
+
+<main class="contact-main">
+
+  <h1 class="contact-title">Kontakt</h1>
+
+  <div class="contact-card">
+
+    <form id="contactForm" class="contact-form">
+
+      <!-- Honeypot -->
+      <input type="text" name="company" tabindex="-1" autocomplete="off" style="display:none">
+
+      <div class="field">
+        <label>Namn*</label>
+        <input type="text" name="name" required>
+      </div>
+
+      <div class="field">
+        <label>E-post*</label>
+        <input type="email" name="_replyto" required>
+      </div>
+
+      <div class="field">
+        <label>Meddelande*</label>
+        <textarea name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="contact-submit">Skicka meddelande</button>
+
+      <div id="successMessage" class="contact-feedback success">
+        Ditt meddelande har skickats. Vi återkommer så snart som möjligt.
+      </div>
+
+      <div id="errorMessage" class="contact-feedback error">
+        Något gick fel. Försök igen eller kontakta oss direkt.
+      </div>
+
+    </form>
+
+  </div>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© <span id="footer-year"></span> YkiSvenska.fi — medlem i CivicLearn-nätverket.</div>
+    <div class="footer-links">
+      <a href="/gratis-test/">Gratis test</a>
+      <a href="/artiklar/">Artiklar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/integritetspolicy/">Integritetspolicy</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  var form      = e.target;
+  var success   = document.getElementById("successMessage");
+  var error     = document.getElementById("errorMessage");
+  var submitBtn = form.querySelector('button[type="submit"]');
+
+  // Honeypot
+  if (form.querySelector('input[name="company"]').value) return;
+
+  success.style.display = "none";
+  error.style.display   = "none";
+
+  submitBtn.disabled  = true;
+  var originalText    = submitBtn.innerText;
+  submitBtn.innerText = "Skickar...";
+
+  var payload = {
+    site:    window.location.hostname,
+    page:    window.location.pathname,
+    name:    form.querySelector('input[name="name"]').value,
+    email:   form.querySelector('input[name="_replyto"]').value,
+    message: form.querySelector('textarea[name="message"]').value
+  };
+
+  try {
+    var response = await fetch("https://civiclearn.app.n8n.cloud/webhook/contact", {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify(payload)
+    });
+
+    if (response.ok) {
+      success.style.display      = "block";
+      submitBtn.style.display    = "none";
+      form.reset();
+    } else {
+      throw new Error("failed");
+    }
+  } catch (err) {
+    error.style.display   = "block";
+    submitBtn.disabled    = false;
+    submitBtn.innerText   = originalText;
+  }
+});
+
+document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

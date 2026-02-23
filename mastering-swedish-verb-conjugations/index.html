@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Mastering Swedish Verb Conjugations | YkiSvenska.fi</title>
+
+  <meta name="description" content="Mastering Swedish Verb Conjugations">
+
+  <link rel="canonical" href="https://ykisvenska.fi/mastering-swedish-verb-conjugations/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mastering Swedish Verb Conjugations">
+  <meta property="og:description" content="Mastering Swedish Verb Conjugations">
+  <meta property="og:url" content="https://ykisvenska.fi/mastering-swedish-verb-conjugations/">
+  <meta property="og:site_name" content="YkiSvenska.fi">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mastering Swedish Verb Conjugations">
+  <meta name="twitter:description" content="Mastering Swedish Verb Conjugations">
+
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a href="/" class="brand-link">
+        <img src="/assets/images/fi.svg" alt="Finland">
+        <div class="brand-title">YkiSvenska.fi</div>
+      </a>
+    </div>
+    <div class="header-center">
+      <nav class="header-nav">
+        <a href="/om-provet/">Om provet</a>
+        <a href="/gratis-test/">Gratis test</a>
+        <a href="/kontakt/">Kontakt</a>
+        <a href="https://civiclearn.com/ykisvenska/login">Logga in</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="brand-powered">powered by <span>CivicLearn</span></div>
+      <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-small-purple">
+        Skapa konto
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <h1>Mastering Swedish Verb Conjugations</h1>
+  <p class="article-subtitle">
+    Mastering Swedish Verb Conjugations
+  </p>
+</section>
+
+<section class="article-cta-box">
+  <strong>Förbered dig för YKI-provet med riktiga simuleringar</strong>
+  <p>Börja träna idag med fullständiga provsimuleringar.</p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-purple">Få full tillgång</a>
+</section>
+
+<section class="article-body">
+Mastering verb conjugations in Swedish is a key step for any learner<a href="https://ykisvenska.fi/free-test/"><strong> preparing for the YKI test.</strong></a> Swedish verbs are divided into four main groups based on their endings and conjugation patterns.
+<h4>Verb Groups:</h4>
+<ol start="1" data-spread="false">
+ 	<li><strong>Group 1:</strong> Verbs ending in '-a' in the infinitive (e.g., "att tala" - to speak).
+<ul data-spread="false">
+ 	<li>Present: Add '-r' (e.g., "talar").</li>
+ 	<li>Past: Add '-de' (e.g., "talade").</li>
+</ul>
+</li>
+ 	<li><strong>Group 2:</strong> Verbs ending in consonants other than '-a.'
+<ul data-spread="false">
+ 	<li>Subdivided into 2a and 2b, differentiated by the addition of '-de' or '-te' in past tense (e.g., "köper" becomes "köpte" - bought).</li>
+</ul>
+</li>
+ 	<li><strong>Group 3:</strong> Short verbs with no '-a' in the infinitive (e.g., "bo" - to live).
+<ul data-spread="false">
+ 	<li>Present: Add '-r' (e.g., "bor").</li>
+ 	<li>Past: Add '-dde' (e.g., "bodde").</li>
+</ul>
+</li>
+ 	<li><strong>Group 4 (Irregular):</strong> Verbs that don't follow standard patterns (e.g., "vara" - to be, "är" - is, "var" - was).</li>
+</ol>
+<h4>Examples for the YKI Test:</h4>
+<ul data-spread="false">
+ 	<li><strong>Regular Verbs:</strong>
+<ul data-spread="false">
+ 	<li>Present: "Jag talar svenska." (I speak Swedish.)</li>
+ 	<li>Past: "Han talade långsamt." (He spoke slowly.)</li>
+</ul>
+</li>
+ 	<li><strong>Irregular Verbs:</strong>
+<ul data-spread="false">
+ 	<li>"Jag är glad." (I am happy.)</li>
+ 	<li>"Hon var trött." (She was tired.)</li>
+</ul>
+</li>
+</ul>
+To excel in the YKI speaking and writing sections, practice using verbs in different tenses while constructing sentences relevant to daily life.
+</section>
+
+<section class="article-cta-box">
+  <strong>Redo för YKI-provet?</strong>
+  <p>Träna med riktiga simuleringar och klara provet med självförtroende.</p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-purple">Börja träna</a>
+</section>
+
+<section class="article-related">
+  <h2>Fler artiklar</h2>
+  <div class="related-grid"></div>
+</section>
+
+<footer class="cl-footer">
+  <div class="cl-footer-inner">
+    © <span id="footer-year"></span>
+    <span class="cl-footer-brand">CivicLearn</span> by Testrada —
+    Alla rättigheter förbehållna.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(async function () {
+  const container = document.querySelector('.related-grid');
+  if (!container) return;
+
+  const currentUrl = window.location.pathname;
+
+  const res = await fetch('/artiklar/articles.json');
+  const all = await res.json();
+
+  // Remove the current article
+  const others = all.filter(a => a.url !== currentUrl);
+
+  // Pick 3 random
+  const selected = others.sort(() => Math.random() - 0.5).slice(0, 3);
+
+  container.innerHTML = selected
+    .map(a => `
+      <a class="related-card" href="${a.url}">
+        <img src="${a.image}" alt="${a.title}">
+        <div class="related-card-body">
+          <h3>${a.title}</h3>
+          <p>${a.desc}</p>
+        </div>
+      </a>
+    `)
+    .join('');
+})();
+</script>
+
+</body>
+</html>

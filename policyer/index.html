@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Policyer och juridisk information – YkiSvenska.fi</title>
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <link rel="stylesheet" href="/assets/css/newhome.css">
+  <style>
+    .policy-page { max-width: 720px; margin: 3rem auto; padding: 0 1.5rem 4rem; }
+    .policy-page h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .policy-page > p { color: #555; margin-bottom: 2rem; }
+    .policy-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; }
+    .policy-links li a { font-weight: 700; font-size: 1.05rem; color: #6b4eff; text-decoration: none; }
+    .policy-links li a:hover { text-decoration: underline; }
+    .policy-links li span { display: block; font-size: 0.9rem; color: #666; margin-top: 0.15rem; }
+    .policy-links li { background: #fff; border: 1px solid #e8e4f0; border-radius: 10px; padding: 1rem 1.25rem; }
+  </style>
+
+  <meta name="description" content="Juridiska policyer och information för YkiSvenska.fi.">
+  <link rel="canonical" href="https://ykisvenska.fi/policyer/">
+  <meta property="og:title" content="Policyer och juridisk information – YkiSvenska.fi">
+  <meta property="og:description" content="Juridiska policyer och information för YkiSvenska.fi.">
+  <meta property="og:url" content="https://ykisvenska.fi/policyer/">
+</head>
+<body>
+
+<header class="cl-header">
+  <div class="cl-header-inner">
+    <a href="/" class="cl-logo">
+      <img src="/assets/images/fi.svg" alt="FI" />
+      <span>YkiSvenska.fi</span>
+    </a>
+    <nav class="cl-nav">
+      <a href="/gratis-test/">Gratis test</a>
+      <a href="/artiklar/">Artiklar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="https://civiclearn.com/ykisvenska/login">Logga in</a>
+    </nav>
+    <div class="cl-right">
+      <div class="cl-powered">powered by <span>CivicLearn</span></div>
+      <a href="https://civiclearn.com/ykisvenska/checkout" class="cl-btn">Full tillgång</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="policy-page">
+    <h1>Policyer och juridisk information</h1>
+    <p>
+      Denna sida samlar de juridiska policyer som gäller för
+      <strong>YkiSvenska.fi</strong>.
+    </p>
+
+    <ul class="policy-links">
+      <li>
+        <a href="/integritetspolicy/">Integritetspolicy</a>
+        <span>Hur vi samlar in, använder och skyddar dina personuppgifter</span>
+      </li>
+      <li>
+        <a href="/cookies/">Policy för cookies</a>
+        <span>Användning av cookies och liknande tekniker</span>
+      </li>
+      <li>
+        <a href="/aterbetalning/">Återbetalningspolicy</a>
+        <span>Villkor för återbetalning och ångerrätt</span>
+      </li>
+      <li>
+        <a href="/anvandningsvillkor/">Allmänna användningsvillkor</a>
+        <span>Regler för åtkomst och användning av webbplatsen</span>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer class="cl-footer">
+  <div class="cl-footer-inner">
+    © <span id="footer-year"></span>
+    <span class="cl-footer-brand">CivicLearn</span> by Testrada – Alla rättigheter förbehållna.
+    · <a href="/gratis-test/">Gratis test</a>
+    · <a href="/policyer/">Policyer</a>
+  </div>
+</footer>
+<script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

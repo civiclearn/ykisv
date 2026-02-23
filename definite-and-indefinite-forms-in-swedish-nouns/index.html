@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Definite and Indefinite Forms in Swedish Nouns | YkiSvenska.fi</title>
+
+  <meta name="description" content="Definite and Indefinite Forms in Swedish Nouns">
+
+  <link rel="canonical" href="https://ykisvenska.fi/definite-and-indefinite-forms-in-swedish-nouns/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Definite and Indefinite Forms in Swedish Nouns">
+  <meta property="og:description" content="Definite and Indefinite Forms in Swedish Nouns">
+  <meta property="og:url" content="https://ykisvenska.fi/definite-and-indefinite-forms-in-swedish-nouns/">
+  <meta property="og:site_name" content="YkiSvenska.fi">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Definite and Indefinite Forms in Swedish Nouns">
+  <meta name="twitter:description" content="Definite and Indefinite Forms in Swedish Nouns">
+
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <a href="/" class="brand-link">
+        <img src="/assets/images/fi.svg" alt="Finland">
+        <div class="brand-title">YkiSvenska.fi</div>
+      </a>
+    </div>
+    <div class="header-center">
+      <nav class="header-nav">
+        <a href="/om-provet/">Om provet</a>
+        <a href="/gratis-test/">Gratis test</a>
+        <a href="/kontakt/">Kontakt</a>
+        <a href="https://civiclearn.com/ykisvenska/login">Logga in</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="brand-powered">powered by <span>CivicLearn</span></div>
+      <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-small-purple">
+        Skapa konto
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <h1>Definite and Indefinite Forms in Swedish Nouns</h1>
+  <p class="article-subtitle">
+    Definite and Indefinite Forms in Swedish Nouns
+  </p>
+</section>
+
+<section class="article-cta-box">
+  <strong>Förbered dig för YKI-provet med riktiga simuleringar</strong>
+  <p>Börja träna idag med fullständiga provsimuleringar.</p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-purple">Få full tillgång</a>
+</section>
+
+<section class="article-body">
+<span style="letter-spacing: -0.53px; font-size: 1rem;">Swedish nouns take definite and indefinite forms depending on context. Knowing when to use each is crucial for grammar accuracy in <a href="https://www.ykisvenska.fi"><strong>the YKI test.</strong></a></span>
+<h4>Rules:</h4>
+<ol start="1" data-spread="false">
+ 	<li><strong>Indefinite Singular:</strong> Use "en" or "ett" before a noun to indicate "a/an."
+<ul data-spread="false">
+ 	<li>Example: "En katt" (a cat), "Ett hus" (a house).</li>
+</ul>
+</li>
+ 	<li><strong>Definite Singular:</strong> Add suffixes like "-en" or "-et" to the noun.
+<ul data-spread="false">
+ 	<li>Example: "Katt<strong>en</strong>" (the cat), "Hus<strong>et</strong>" (the house).</li>
+</ul>
+</li>
+ 	<li><strong>Indefinite Plural:</strong> Add "-ar," "-er," or "-n" depending on the noun group.
+<ul data-spread="false">
+ 	<li>Example: "Katter" (cats), "Hus" (houses).</li>
+</ul>
+</li>
+ 	<li><strong>Definite Plural:</strong> Add "-na" or "-en."
+<ul data-spread="false">
+ 	<li>Example: "Katter<strong>na</strong>" (the cats), "Hus<strong>en</strong>" (the houses).</li>
+</ul>
+</li>
+</ol>
+<h4>YKI Example Sentences:</h4>
+<ul data-spread="false">
+ 	<li>Indefinite: "Jag såg en fågel." (I saw a bird.)</li>
+ 	<li>Definite: "Fågel<strong>n</strong> var blå." (The bird was blue.)</li>
+</ul>
+<div>
+
+<hr />
+
+</div>
+<h3></h3>
+</section>
+
+<section class="article-cta-box">
+  <strong>Redo för YKI-provet?</strong>
+  <p>Träna med riktiga simuleringar och klara provet med självförtroende.</p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="btn-purple">Börja träna</a>
+</section>
+
+<section class="article-related">
+  <h2>Fler artiklar</h2>
+  <div class="related-grid"></div>
+</section>
+
+<footer class="cl-footer">
+  <div class="cl-footer-inner">
+    © <span id="footer-year"></span>
+    <span class="cl-footer-brand">CivicLearn</span> by Testrada —
+    Alla rättigheter förbehållna.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(async function () {
+  const container = document.querySelector('.related-grid');
+  if (!container) return;
+
+  const currentUrl = window.location.pathname;
+
+  const res = await fetch('/artiklar/articles.json');
+  const all = await res.json();
+
+  // Remove the current article
+  const others = all.filter(a => a.url !== currentUrl);
+
+  // Pick 3 random
+  const selected = others.sort(() => Math.random() - 0.5).slice(0, 3);
+
+  container.innerHTML = selected
+    .map(a => `
+      <a class="related-card" href="${a.url}">
+        <img src="${a.image}" alt="${a.title}">
+        <div class="related-card-body">
+          <h3>${a.title}</h3>
+          <p>${a.desc}</p>
+        </div>
+      </a>
+    `)
+    .join('');
+})();
+</script>
+
+</body>
+</html>

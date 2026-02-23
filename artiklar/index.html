@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- ===============================
+       SEO FOR HUB PAGE
+  ================================== -->
+  <title>Artiklar – Förberedelse för YKI-provet</title>
+
+  <meta name="description"
+        content="Fördjupade artiklar om YKI-provet, finskt medborgarskap, effektiv förberedelse och beprövade strategier. Perfekt för att klara YKI svenska.">
+
+  <link rel="canonical" href="https://ykisvenska.fi/artiklar" />
+
+  <!-- ===============================
+       OPEN GRAPH
+  ================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Artiklar – Förberedelse för YKI-provet">
+  <meta property="og:description"
+        content="Läs vår kompletta samling av artiklar fokuserade på YKI-provet och finskt medborgarskap.">
+  <meta property="og:image"
+        content="https://ykisvenska.fi/assets/images/articles/hero-articles.webp">
+  <meta property="og:url" content="https://ykisvenska.fi/artiklar">
+  <meta property="og:site_name" content="YkiSvenska.fi">
+
+  <!-- ===============================
+       TWITTER
+  ================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Artiklar – Förberedelse för YKI-provet">
+  <meta name="twitter:description"
+        content="En strukturerad samling av artiklar för YKI-provet i Finland.">
+  <meta name="twitter:image"
+        content="https://ykisvenska.fi/assets/images/articles/hero-articles.webp">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/newhome.css">
+
+  <style>
+    /* ── Articles hub styles ── */
+    .articles-hero {
+      text-align: center;
+      padding: 3.5rem 1.25rem 2.5rem;
+      background: linear-gradient(160deg, #f5f3ff 0%, #fff 60%);
+    }
+    .articles-hero h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.75rem;
+    }
+    .articles-hero-subtitle {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 620px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.65;
+    }
+
+    /* Featured */
+    .featured-article {
+      max-width: 860px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1.25rem;
+    }
+    .featured-article h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7c3aed;
+      margin-bottom: 1.1rem;
+    }
+    .featured-card {
+      display: flex;
+      gap: 1.75rem;
+      background: #fff;
+      border-radius: 1.4rem;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .featured-card:hover {
+      box-shadow: 0 10px 32px rgba(124,58,237,0.14);
+      transform: translateY(-2px);
+    }
+    .featured-card-image {
+      flex: 0 0 300px;
+      max-width: 300px;
+    }
+    .featured-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .featured-card-content {
+      padding: 1.75rem 1.75rem 1.75rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-card-content h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .featured-card-content p {
+      font-size: 0.97rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .featured-read-more {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: #7c3aed;
+    }
+    @media (max-width: 640px) {
+      .featured-card { flex-direction: column; }
+      .featured-card-image { flex: none; max-width: 100%; height: 200px; }
+      .featured-card-content { padding: 1.25rem; }
+    }
+
+    /* Grid */
+    .articles-grid-section {
+      max-width: 1060px;
+      margin: 0 auto 3rem;
+      padding: 0 1.25rem;
+    }
+    .articles-grid-section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+    }
+    @media (max-width: 860px) {
+      .articles-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .articles-grid { grid-template-columns: 1fr; }
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 1.1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 24px rgba(124,58,237,0.13);
+      transform: translateY(-2px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-card-body {
+      padding: 1rem 1.1rem 1.25rem;
+      flex: 1;
+    }
+    .blog-card-body h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.4;
+      margin-bottom: 0.45rem;
+    }
+    .blog-card-body p {
+      font-size: 0.87rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* CTA bottom */
+    .articles-cta-bottom {
+      text-align: center;
+      padding: 3rem 1.25rem;
+      background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+      color: #fff;
+    }
+    .articles-cta-bottom h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .articles-cta-bottom p {
+      font-size: 1rem;
+      opacity: 0.88;
+      margin-bottom: 1.5rem;
+    }
+    .cta-purple {
+      display: inline-block;
+      background: #fff;
+      color: #7c3aed;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .cta-purple:hover { background: #f3f0ff; }
+    .articles-hero .cta-purple {
+      background: #7c3aed;
+      color: #fff;
+    }
+    .articles-hero .cta-purple:hover { background: #6d28d9; }
+  </style>
+</head>
+
+<body>
+
+<header class="cl-header">
+  <div class="cl-header-inner">
+    <a href="/" class="cl-logo">
+      <img src="/assets/images/fi.svg" alt="FI" />
+      <span>YkiSvenska.fi</span>
+    </a>
+    <nav class="cl-nav">
+      <a href="/gratis-test/">Gratis test</a>
+      <a href="/artiklar/" class="active">Artiklar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="https://civiclearn.com/ykisvenska/login">Logga in</a>
+    </nav>
+    <div class="cl-right">
+      <div class="cl-powered">powered by <span>CivicLearn</span></div>
+      <a href="https://civiclearn.com/ykisvenska/checkout" class="cl-btn">Fullständig åtkomst</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="articles-hero">
+  <h1>Artiklar för YKI-provet</h1>
+  <p class="articles-hero-subtitle">
+    Specialiserade och precisa artiklar som täcker centrala ämnen för YKI-provet: förberedelse, strategier, medborgarskapskrav och språkkunskaper på svenska.
+  </p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="cta-purple">Börja din träning</a>
+</section>
+
+<!-- FEATURED ARTICLE (DYNAMIC) -->
+<section class="featured-article">
+  <h2>Utvald artikel</h2>
+
+  <a id="featured-card" class="featured-card" href="#">
+    <div class="featured-card-image">
+      <img id="featured-image" src="" alt="">
+    </div>
+    <div class="featured-card-content">
+      <h3 id="featured-title"></h3>
+      <p id="featured-desc"></p>
+      <span class="featured-read-more">Läs artikel →</span>
+    </div>
+  </a>
+</section>
+
+
+<!-- GRID OF ALL ARTICLES -->
+
+<section class="articles-grid-section">
+  <h2>Alla artiklar</h2>
+  <div class="articles-grid" id="articlesGrid"></div>
+</section>
+
+<!-- CTA BOTTOM -->
+<section class="articles-cta-bottom">
+  <h3>Vill du klara YKI-provet första gången?</h3>
+  <p>Gör fullständiga simuleringar, se statistik och träna alla ämnen på ett riktat sätt.</p>
+  <a href="https://civiclearn.com/ykisvenska/checkout" class="cta-purple">Få full tillgång</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>© <span id="footer-year"></span> YkiSvenska.fi — medlem i CivicLearn-nätverket.</div>
+    <div class="footer-links">
+      <a href="/gratis-test/">Gratis test</a>
+      <a href="/artiklar/">Artiklar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/integritetspolicy/">Integritetspolicy</a>
+    </div>
+  </div>
+</footer>
+<script>
+(async function () {
+  // Single fetch — shared by both featured card and grid
+  let all;
+  try {
+    const res = await fetch('articles.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    all = await res.json();
+  } catch (err) {
+    console.error('Could not load articles.json:', err);
+    return;
+  }
+
+  // ── Featured card: daily rotation ──
+  const dayIndex = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+  const featured = all[dayIndex % all.length];
+
+  document.getElementById("featured-card").href          = featured.url;
+  document.getElementById("featured-image").src          = featured.image;
+  document.getElementById("featured-image").alt          = featured.title;
+  document.getElementById("featured-title").textContent  = featured.title;
+  document.getElementById("featured-desc").textContent   = featured.desc;
+
+  // ── Grid: all articles, original JSON order ──
+  const grid = document.getElementById("articlesGrid");
+  if (!grid) return;
+
+  grid.innerHTML = all.map(function(a) {
+    return '<a href="' + a.url + '" class="blog-card">'
+      + '<img src="' + a.image + '" alt="' + a.title.replace(/"/g, '&quot;') + '" loading="lazy">'
+      + '<div class="blog-card-body">'
+      + '<h3>' + a.title + '</h3>'
+      + '<p>' + a.desc + '</p>'
+      + '</div>'
+      + '</a>';
+  }).join('');
+})();
+</script>
+
+<script>
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
