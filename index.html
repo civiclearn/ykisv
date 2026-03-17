@@ -720,7 +720,7 @@ function findCurrentPair() {
 
   for (let i = 0; i < YKI_SCHEDULE.length; i++) {
     const testDate = new Date(YKI_SCHEDULE[i].test + "T00:00:00");
-    if (testDate >= now) {
+    if (testDate > now) {
       return {
         current: YKI_SCHEDULE[i],
         next: YKI_SCHEDULE[i + 1] || null
