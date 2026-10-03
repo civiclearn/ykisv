@@ -280,7 +280,7 @@
 <div class="exam-status-text">
 <p class="exam-status-sentence" id="status-test-text">
             Nästa YKI-prov på svenska äger rum den
-            <strong>11 april 2026</strong>.
+            <strong>14 november 2026</strong>.
           </p>
 </div>
 </div>
@@ -293,7 +293,7 @@
 <div class="exam-status-text">
 <p class="exam-status-sentence" id="status-reg-text">
             Anmälan till YKI-provet stänger redan den
-            <strong>26 mars 2026</strong>.
+            <strong>29 oktober 2026</strong>.
           </p>
 </div>
 </div>
@@ -510,10 +510,14 @@ document.querySelectorAll(".faq-item").forEach(item => {
    ====================================================== -->
 <script>
 
+/* YKI svenska, mellannivå — fullständigt test (alla delprov). Källa: oph.fi testdagar (kontrollerat 3.10.2026).
+   "registration" = sista anmälningsdag. Delprovsdagar (bara vissa delprov) är utelämnade.
+   Lägg till nya datum så snart OPH publicerar dem (hösten 2027 publiceras normalt i början av året). */
 const YKI_SCHEDULE = [
-  { test: "2026-04-11", registration: "2026-03-26" },
   { test: "2026-08-29", registration: "2026-08-13" },
+  { test: "2026-10-02", registration: "2026-09-16" },
   { test: "2026-11-14", registration: "2026-10-29" },
+  { test: "2027-01-23", registration: "2027-01-14" },   /* digitalt YKI från 2027 */
 ];
 
 /* -------- HELPERS -------- */
